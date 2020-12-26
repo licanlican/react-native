@@ -17,6 +17,7 @@ function Store(props) {
 
   useEffect(() => {
     fetchData(res => {
+      
       setState(res)
       setBacground(
         IMAGE_ACCORDING_TO_WEATER.get(res.result.now.text).poster)
